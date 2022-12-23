@@ -1,0 +1,17 @@
+{
+  "name": "k01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "err1": "node index.js",
+    "err2": "node index.js 1323122022 1423122022",
+    "dr": "node index.js 13-23-12-2023 14-23-12-2023 15-23-12-2023",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
