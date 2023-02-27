@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Lorem, ipsum dolor.</h1>
+    </header>
+    <div class="container_nav">
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="prop.html">Настройки</a>
+            <a href="help.html">Помощь</a>
+        </nav>
+    </div>
+
+    <main>
+
+        <div class="tab">
+
+            <button class="tablinks" id="btnTab1" name="page1">Продолжительность</button>
+            <button class="tablinks" id="btnTab2" name="page2">Вкладка2</button>
+            <button class="tablinks" id="btnTab3" name="page3">Таймер</button>
+
+        </div>
+
+        <div id="page1" class="tabcontent">
+            <h3>Калькулятор дат</h3>
+            <p>Посчитает сколько дней между двумя датами: </p>
+
+            <form action="" id="datecalc" name="datecalc">
+                <h3>Введите две даты</h3>
+                <label for="">
+                    <strong>
+                        Date1:
+                    </strong>
+                    <input class="inp1" type="date" name="firstDate" />
+                </label>
+                <label for="">
+                    <strong>
+                        Date2:
+                    </strong>
+                    <input class="inp1" type="date" name="secondDate" />
+                </label>
+                <p id="dtResult" name="dtResult"></p>
+                <button class="btn1" type="submit">Расчитать продолжительность</button>
+
+            </form>
+
+        </div>
+        <div id="page2" class="tabcontent">
+            <h3>page2</h3>
+            <p>Это page2</p>
+            <p id="rocket"></p>
+        </div>
+        <div id="page3" class="tabcontent">
+
+            <form id="fTimer" name="fTimer">
+                <h3>Введите дату время до:</h3>
+
+                <label for="">
+                    <strong>
+                        Текущее:
+                    </strong>
+                    <input class="inp1" type="datetime-local" name="toDate" id="toDate" />
+                </label>
+
+                <strong>
+                    Прибавить
+                </strong>
+                <label for="addMinutes"> минут:
+                    <input class="inp2" type="number" min="0" max="60" name="addMinutes" id="addMinutes" />
+                </label>
+                <button class="btn4" type="button" id="btnAddTime" name="btnAddTime">+</button>
+
+                <p id="leDate" name="leDate"></p>
+
+                <button class="btn1" type="submit">Старт</button>
+
+                <button class="btn2" type="button" id="btnStop">Stop</button>
+                <button class="btn3" type="button" id="btnClear">Clear</button>
+                <p id="secTimer" name="secTimer"></p>
+
+            </form>
+
+        </div>
+    </main>
+    <footer>
+        2023 Tsvetkov
+    </footer>
+
+</body>
+
+</html>
